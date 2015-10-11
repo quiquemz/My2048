@@ -38,6 +38,7 @@ public class Gui2048 extends Application
   private Board board; // The 2048 Game Board.
 
   // Original colors.
+  /*
   private static final Color COLOR_EMPTY = Color.rgb(238, 228, 218, 0.35);
   private static final Color COLOR_2 = Color.rgb(238, 228, 218);
   private static final Color COLOR_4 = Color.rgb(237, 224, 200);
@@ -56,9 +57,10 @@ public class Gui2048 extends Application
   private static final Color COLOR_VALUE_LIGHT = Color.rgb(249, 246, 242);
   // For tiles < 8
   private static final Color COLOR_VALUE_DARK = Color.rgb(119, 110, 101); 
-  
+  */
+
   // Colors determined by my imagination.
- /* private static final Color COLOR_EMPTY = Color.WHITE;
+  private static final Color COLOR_EMPTY = Color.WHITE;
   private static final Color COLOR_2 = Color.WHITE;
   private static final Color COLOR_4 = Color.WHITE;
   private static final Color COLOR_8 = Color.WHITE;
@@ -71,13 +73,13 @@ public class Gui2048 extends Application
   private static final Color COLOR_1024 = Color.rgb(237, 197, 63);
   private static final Color COLOR_2048 = Color.rgb(237, 194, 46);
   private static final Color COLOR_OTHER = Color.BLACK;
-  private static final Color COLOR_GAME_OVER = Color.rgb(238,228, 218, 0.73);
+  private static final Color COLOR_GAME_OVER = Color.rgb(255,255, 0, 0.8);
   // For tiles >= 8
   private static final Color COLOR_VALUE_LIGHT = Color.WHITE;
   // For tiles < 8
-  private static final Color COLOR_VALUE_DARK = Color.BLACK; */
+  private static final Color COLOR_VALUE_DARK = Color.BLACK;
   
-  /** Add your own Instance Variables here */
+  /** Instance Variables here */
   private static final int TWO = 2;
   private static final int FOUR = 4;
   private static final int EIGHT = 8;
@@ -118,7 +120,8 @@ public class Gui2048 extends Application
     
     //Setting the GridPane properties.
     gridPane.setAlignment(Pos.CENTER); 
-    gridPane.setStyle("-fx-background-color: rgb(187, 173, 160)");
+    //gridPane.setStyle("-fx-background-color: rgb(187, 173, 160)");
+    gridPane.setStyle("-fx-background-color: rgb(255, 255, 255)");
     gridPane.setHgap(TEN); //Setting the tiles' horizontal margin.
     gridPane.setVgap(TEN); //Settign the tiles' vertical margin.
     
@@ -250,6 +253,7 @@ public class Gui2048 extends Application
 
         //Else setting the color to the one that corresponds to the case
         else {
+          tiles[x][y].rectangle.setStroke(Color.BLACK);
           switch (val) {
             case 0: tiles[x][y].rectangle.setFill(COLOR_EMPTY);
                     break;
