@@ -1,10 +1,10 @@
 # My2048
 ### To run the program:
-  * Compile the java files ---> 
+  * Compile the java files -----> 
   ```
   javac *.java  
   ```
-  * Run Gui2048 --------------> 
+  * Run Gui2048 ---------------> 
   ```
   java Gui2048
   ```
