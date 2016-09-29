@@ -5,7 +5,7 @@
 javac *.java
 ```
   2. Run Gui2048
-  ```
-  java Gui2048
-  ```
+```
+java Gui2048
+```
   3. Try to beat me and enjoy!!!
