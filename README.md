@@ -4,7 +4,7 @@
   ```
   javac *.java  
   ```
-  * Run Gui2048 ---> 
+  * Run Gui2048 --------------> 
   ```
   java Gui2048
   ```
